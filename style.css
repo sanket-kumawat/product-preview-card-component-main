@@ -55,6 +55,10 @@ p {
   font-weight: 700;
 }
 
+.product-details .detail {
+  line-height: 1.5rem;
+}
+
 .price {
   padding: 10px 0 24px 0;
 }
@@ -84,11 +88,30 @@ p {
   background-color: var(--dark-cyan);
   color: var(--white);
   border: none;
-  padding: 16px 64px;
+  padding: 16px 0;
+  width: 100%;
   border-radius: .5rem;
 }
 
 .product-details button img, span {
   vertical-align: middle;
   font-weight: 700;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 320px;
+    flex-direction: column;
+  }
+
+  .product-details {
+    padding: 20px;
+    width: auto;
+  }
+
+  .product-image {
+    background-image: url(./images/image-product-mobile.jpg);
+    height: 220px;
+    width: auto;
+  }
 }
